@@ -22993,16 +22993,16 @@ cr.behaviors.solid = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Arr,
 	cr.plugins_.Browser,
-	cr.plugins_.Keyboard,
-	cr.plugins_.gamepad,
 	cr.plugins_.Mouse,
-	cr.plugins_.TextBox,
+	cr.plugins_.gamepad,
+	cr.plugins_.Keyboard,
 	cr.plugins_.Text,
-	cr.plugins_.TiledBg,
-	cr.plugins_.Touch,
 	cr.plugins_.Sprite,
+	cr.plugins_.TextBox,
+	cr.plugins_.Touch,
+	cr.plugins_.TiledBg,
+	cr.plugins_.Arr,
 	cr.behaviors.custom,
 	cr.behaviors.Platform,
 	cr.behaviors.solid,
@@ -23042,4 +23042,3 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.TextBox.prototype.acts.SetText,
 	cr.plugins_.Touch.prototype.cnds.OnTouchObject
 ];};
-
